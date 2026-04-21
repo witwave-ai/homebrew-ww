@@ -5,21 +5,21 @@
 class Ww < Formula
   desc "witwave CLI for the Witwave multi-container agent platform"
   homepage "https://github.com/skthomasjr/witwave"
-  version "0.5.8"
+  version "0.5.9"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skthomasjr/witwave/releases/download/v0.5.8/ww_0.5.8_darwin_amd64.tar.gz"
-      sha256 "185e64fb8a1fd6ec44b61f58b3d65aceba5c2901b3a692154ca4e192e3c58fac"
+      url "https://github.com/skthomasjr/witwave/releases/download/v0.5.9/ww_0.5.9_darwin_amd64.tar.gz"
+      sha256 "da22f545d81400c6d2fc5cb00b4e4bd26c6fb2da091da7015486be30dc614417"
 
       define_method(:install) do
         bin.install "ww"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skthomasjr/witwave/releases/download/v0.5.8/ww_0.5.8_darwin_arm64.tar.gz"
-      sha256 "23beda9e2a67c9b6144ad112fae65d21411c4cc1ec391c8176a303b3d6560d11"
+      url "https://github.com/skthomasjr/witwave/releases/download/v0.5.9/ww_0.5.9_darwin_arm64.tar.gz"
+      sha256 "9b9dde0f22a6721ad4a0f67d13b10a13fd899822eefecc43f891b8ff7aa071dc"
 
       define_method(:install) do
         bin.install "ww"
@@ -29,15 +29,15 @@ class Ww < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skthomasjr/witwave/releases/download/v0.5.8/ww_0.5.8_linux_amd64.tar.gz"
-      sha256 "0d22ee2aa0778673affe3fe48b015e853b9426bb042622dfbaa52698a0ffe816"
+      url "https://github.com/skthomasjr/witwave/releases/download/v0.5.9/ww_0.5.9_linux_amd64.tar.gz"
+      sha256 "650ff0cfac94677563cfbeaa37dee0b487e431caa99cd8d1cd7d2baf37d06e72"
       define_method(:install) do
         bin.install "ww"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skthomasjr/witwave/releases/download/v0.5.8/ww_0.5.8_linux_arm64.tar.gz"
-      sha256 "f970c9168df0c7742fcf4669a8b572475bfdab8a86d0ee74769dc385b807c213"
+      url "https://github.com/skthomasjr/witwave/releases/download/v0.5.9/ww_0.5.9_linux_arm64.tar.gz"
+      sha256 "0395c60341eb2b38367acbf71a925556ff65d535c30d57518bff6e09dde151e2"
       define_method(:install) do
         bin.install "ww"
       end
