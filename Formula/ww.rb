@@ -5,21 +5,21 @@
 class Ww < Formula
   desc "witwave CLI for the Witwave multi-container agent platform"
   homepage "https://github.com/skthomasjr/witwave"
-  version "0.7.17"
+  version "0.7.18"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skthomasjr/witwave/releases/download/v0.7.17/ww_0.7.17_darwin_amd64.tar.gz"
-      sha256 "b755ec2f9c90fe2222c856987f69301adf576d09575de4a6370614bda46a98ff"
+      url "https://github.com/skthomasjr/witwave/releases/download/v0.7.18/ww_0.7.18_darwin_amd64.tar.gz"
+      sha256 "016371b0bdff2ee52e66738e802382c8a48c35c489bb7dc6be9beca38cb345bc"
 
       define_method(:install) do
         bin.install "ww"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skthomasjr/witwave/releases/download/v0.7.17/ww_0.7.17_darwin_arm64.tar.gz"
-      sha256 "6a55278471aa7c75ef26fa26d4c1b7a0daf99302021df3a7ebcd7586145869cd"
+      url "https://github.com/skthomasjr/witwave/releases/download/v0.7.18/ww_0.7.18_darwin_arm64.tar.gz"
+      sha256 "af5926bd49bbe141cedccc31d100cd835f3c2fc77b59d5da26395865a1ab1951"
 
       define_method(:install) do
         bin.install "ww"
@@ -29,15 +29,15 @@ class Ww < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skthomasjr/witwave/releases/download/v0.7.17/ww_0.7.17_linux_amd64.tar.gz"
-      sha256 "92be98429fe05e081bb9410b86adcb6583bbf44d1ce06b5c54bed1a6eecf819c"
+      url "https://github.com/skthomasjr/witwave/releases/download/v0.7.18/ww_0.7.18_linux_amd64.tar.gz"
+      sha256 "efde0f602ba8d15f110ee27f01dc6e145a15b97a69f599e804eb9887c85536c9"
       define_method(:install) do
         bin.install "ww"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skthomasjr/witwave/releases/download/v0.7.17/ww_0.7.17_linux_arm64.tar.gz"
-      sha256 "8fa2c695e20b79669f88c95ea948a6bd8d0c8539df8fc0b6c7822c747cf58c03"
+      url "https://github.com/skthomasjr/witwave/releases/download/v0.7.18/ww_0.7.18_linux_arm64.tar.gz"
+      sha256 "3bc4991735cc89ca3887cbe5af47b2dee275eaa7aab9c99af605ffda981c6f9b"
       define_method(:install) do
         bin.install "ww"
       end
